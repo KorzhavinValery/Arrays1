@@ -3,10 +3,11 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
-        System.out.println("Задача1");
+        System.out.println("Задача 1");
         int[] firstArray = new int[3];
         firstArray[0] = 1;
         firstArray[1] = 2;
@@ -26,7 +27,7 @@ public class Main {
     }
 
     public static void task2() {
-        System.out.println("Задача2");
+        System.out.println("Задача 2");
         int[] firstArray1 = new int[3];
         firstArray1[0] = 1;
         firstArray1[1] = 2;
@@ -54,7 +55,7 @@ public class Main {
     }
 
     public static void task3() {
-        System.out.println("Задача3");
+        System.out.println("Задача 3");
         int[] firstArray1 = new int[3];
         firstArray1[0] = 1;
         firstArray1[1] = 2;
@@ -79,5 +80,29 @@ public class Main {
             }
             System.out.print(thirdArray1[i] + ", ");
         }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        int[] firstArray = new int[3];
+        for (int i = 0; i < firstArray.length; i++) {
+            firstArray[i] = i + 1;
+            firstArray[0] += 1;
+            firstArray[2] += 1;
+            if (i == firstArray.length - 1) {
+                System.out.println(firstArray[i]);
+                break;
+            }
+            System.out.print(firstArray[i] + ", ");
+        }
+//        int[] firstArray = new int[3];
+//        firstArray[0] = 1;
+//        firstArray[1] = 2;
+//        firstArray[2] = 3;
+//        firstArray[0] += 1;
+//        firstArray[2] += 1;
+//        System.out.println(firstArray[0]);
+//        System.out.println(firstArray[1]);
+//        System.out.println(firstArray[2]);
     }
 }
