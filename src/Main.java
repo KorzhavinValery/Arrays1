@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -45,7 +46,35 @@ public class Main {
         int[] thirdArray1 = {57, 14, 78};
         for (int i = 0; i < thirdArray1.length; i++) {
             if (i == thirdArray1.length - 1) {
+                System.out.println(thirdArray1[i]);
+                break;
+            }
+            System.out.print(thirdArray1[i] + ", ");
+        }
+    }
+
+    public static void task3() {
+        System.out.println("Задача3");
+        int[] firstArray1 = new int[3];
+        firstArray1[0] = 1;
+        firstArray1[1] = 2;
+        firstArray1[2] = 3;
+        System.out.print(firstArray1[2] + ", ");
+        System.out.print(firstArray1[1] + ", ");
+        System.out.print(firstArray1[0]);
+        System.out.println();
+        float[] secondArray1 = {1.57f, 7.654f, 9.986f};
+        for (int i = secondArray1.length - 1; i >= 0; i--) {
+            if (i == 0) {
                 System.out.println(secondArray1[i]);
+                break;
+            }
+            System.out.print(secondArray1[i] + ", ");
+        }
+        int[] thirdArray1 = {57, 14, 78};
+        for (int i = thirdArray1.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(thirdArray1[i]);
                 break;
             }
             System.out.print(thirdArray1[i] + ", ");
