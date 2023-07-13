@@ -87,12 +87,9 @@ public class Main {
         int[] firstArray = new int[3];
         for (int i = 0; i < firstArray.length; i++) {
             firstArray[i] = i + 1;
-            firstArray[0] += 1;
-            firstArray[2] += 1;
             if (i == firstArray.length - 1 & i % 2 == 0) {
-
+                ++firstArray[i];
                 System.out.println(firstArray[i]);
-                firstArray[i] += 1;
                 break;
             }
             System.out.print(firstArray[i] + ", ");
