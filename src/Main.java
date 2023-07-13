@@ -89,20 +89,13 @@ public class Main {
             firstArray[i] = i + 1;
             firstArray[0] += 1;
             firstArray[2] += 1;
-            if (i == firstArray.length - 1) {
+            if (i == firstArray.length - 1 & i % 2 == 0) {
+
                 System.out.println(firstArray[i]);
+                firstArray[i] += 1;
                 break;
             }
             System.out.print(firstArray[i] + ", ");
         }
-//        int[] firstArray = new int[3];
-//        firstArray[0] = 1;
-//        firstArray[1] = 2;
-//        firstArray[2] = 3;
-//        firstArray[0] += 1;
-//        firstArray[2] += 1;
-//        System.out.println(firstArray[0]);
-//        System.out.println(firstArray[1]);
-//        System.out.println(firstArray[2]);
     }
 }
