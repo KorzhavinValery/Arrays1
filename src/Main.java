@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -85,14 +87,12 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         int[] firstArray = new int[3];
-        for (int i = 0; i < firstArray.length; i++) {
+        for (int i = 0; i < firstArray.length; ++i) {
             firstArray[i] = i + 1;
-            if (i == firstArray.length - 1 & i % 2 == 0) {
-                ++firstArray[i];
-                System.out.println(firstArray[i]);
-                break;
+            if (firstArray[i] % 2 != 0) {
+                firstArray[i]++;
             }
-            System.out.print(firstArray[i] + ", ");
         }
+        System.out.println(Arrays.toString(firstArray));
     }
 }
